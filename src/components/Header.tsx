@@ -1,6 +1,7 @@
 import React from 'react';
 import { UserStats } from '../types';
 import { Sparkles, Shield, Palette, ShoppingBag, Flame, Award, BookOpen, RotateCcw } from 'lucide-react';
+import logoImage from '../../logo.png';
 
 interface HeaderProps {
   stats: UserStats;
@@ -26,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
         
         {/* Brand Logo & Tagline */}
         <div className="flex items-center gap-3.5">
-          <img src="/logo.png" alt="إتقان Logo" className="h-12 w-auto object-contain" />
+          <img src={logoImage} alt="إتقان Logo" className="h-12 w-auto object-contain" />
         </div>
 
         {/* Quick Stats & Actions */}
